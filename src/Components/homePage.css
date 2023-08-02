@@ -1,0 +1,875 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+* {
+  /* padding: 0;
+  margin: 0; */
+  /* font-family: sans-serif; */
+  font-family: 'Questrial' !important;
+  letter-spacing: 0.1px;
+}
+
+/*----------------------Navbar.jsx------------------------*/
+
+nav {
+  background-color: rgb(15, 15, 15);
+  display: flex;
+  justify-content: space-around;
+  height: 120px;
+  align-items: center;
+}
+
+.logo {
+  width: 15%;
+  text-align: center;
+  border-radius: 100px;
+  display: flex;
+}
+
+.logo img {
+  height: 70px;
+  border-radius: 100px;
+  margin-top: 5;
+
+}
+
+.logo h1{
+  margin-top: 23px;
+  flex: 1;
+  color: #fff;
+}
+
+.NavLinks {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.NavLinks li {
+  list-style: none;
+  margin-right: 40px;
+}
+
+.NavLinks li * {
+  text-decoration: none;
+  color: rgb(228, 228, 228);
+  font-size: 22px;
+}
+
+.NavLinks li *:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.download-btn-nav {
+  width: 15%;
+}
+
+.download-btn-nav button {
+  width: 200px;
+  padding: 10px;
+  border-radius: 50px;
+  color: rgb(212, 212, 212);
+  background: transparent;
+  font-size: 22px;
+  border: 1px solid rgb(218, 218, 218);
+  cursor: pointer;
+}
+
+.download-btn-nav button:hover {
+  cursor: pointer;
+  color: white;
+  border-color: white;
+}
+
+@media screen and (max-width: 600px) {
+  nav{
+    width: 100%;
+  }
+  .NavLinks {
+    display: none;
+  }
+  .logo {
+    width: 25%;
+    text-align: center;
+  }
+  .logo img{
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+  }
+  .download-btn-nav button {
+    width: 140px;
+    padding: 10px;
+    border-radius: 50px;
+    color: rgb(248, 248, 248);
+    background: transparent;
+    font-size: 16px;
+    border: 1px solid white;
+  }
+}
+
+/*----------------------HeadingBanner.jsx------------------------*/
+
+.heading-banner-container {
+  background-color: black;
+}
+
+
+.top-Heading {
+  background-image: url("https://web-assets.cred.club/_next/assets/images/home-page/hero-bg.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.top-Heading  .a{
+
+  display: inline-block;
+  float: right;
+  margin-right: 100px;
+}
+
+.object-cover{
+  height: 600px;
+  width: 600px;
+}
+
+
+.top-Heading p {
+  font-size: 20px;
+  color: rgb(248, 248, 248);
+  text-align: left;
+  margin-left: 10%;
+  font-family: 'Times New Roman';
+  margin-block-start: -45px;
+}
+
+.top-Heading .title {
+  font-size: 65px;
+  color: #fefefe;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  padding-top: 120px;
+  margin-left: 10%;
+  text-align: left;
+  font-weight: bold;
+  background: linear-gradient(45deg, #103ec6, #0bdbb9, #05c5f0, #15ff00);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: vibrant 10s infinite;
+}
+
+.top-Heading .Profession{
+  font-size: 55px;
+  margin-block-start: 5px;
+  text-align: left;
+  margin-left: 10%;
+  font-weight: bold;
+  background: linear-gradient(45deg, #103ec6, #0bdbb9, #05c5f0, #15ff00);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: vibrant 10s infinite;
+}
+
+.top-Heading  button {
+  width: 350px;
+  padding: 15px;
+  border-radius: 50px;
+  color: rgb(34, 33, 33);
+  font-size: 24px;
+  border: none;
+  background-color: rgb(248, 248, 248);
+  margin-left: 10%;
+  align-self: center;
+  margin-block-start: -45px;
+
+}
+
+@keyframes vibrant {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.phone-animation-container {
+  /* display: flex;
+    justify-content: center; */
+  height: 75vh;
+  background-image: url("../images/video-bg.png");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .toggleAnimation{
+  animation: mymove 1s;
+} */
+
+
+
+.phone-animation-container img:nth-child(1) {
+  opacity: 1;
+  transform: translate(-170%, 15%);
+  z-index: 98;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  top: 90px;
+  height: 326px;
+  
+}
+
+.phone-animation-container img:nth-child(2) {
+  opacity: 1;
+  transform: translate(-115%, 15%);
+  z-index: 99;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  top: 60px;
+  height: 320px;
+}
+.phone-animation-container img:nth-child(3) {
+  opacity: 1;
+  transform: translate(-50%, 5%);
+  z-index: 100;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  top: 50px;
+  height: 350px;
+}
+.phone-animation-container img:nth-child(4) {
+  opacity: 1;
+  transform: translate(15%, 12%);
+  z-index: 99;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  top: 50px;
+  height: 372px;
+}
+.phone-animation-container img:nth-child(5) {
+  opacity: 1;
+  transform: translate(70%, 25%);
+  z-index: 98;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  top: 50px;
+  height: 350px;
+}
+
+
+/* @keyframes mymove {
+    
+  from {
+    top: 400px;
+    }
+  to {
+    top: 0px;
+    }
+} */
+
+@media screen and (max-width: 600px) {
+  .top-Heading{
+    padding: 40px;
+    height: 100%;
+    text-align: left;
+  }
+  .top-Heading .title {
+    line-height: 1;
+    font-size: 56px;
+  }
+  .top-Heading p {
+    font-size: 26px;
+  }
+  
+  /* The typing effect */
+  .phone-animation-container {
+    /* display: flex;
+      justify-content: center; */
+    height: 55vh;
+
+  }
+
+  .top-Heading button {
+    width: 200px;
+    padding: 10px;
+    border-radius: 50px;
+    color: rgb(34, 33, 33);
+    font-size: 20px;
+    border: none;
+    background-color: rgb(248, 248, 248);
+    margin: 30px 0 30px 0;
+    font-weight: bolder;
+  }
+
+  .phone-animation-container img{
+       height: 350px;
+  }
+
+}
+
+
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: rgb(10, 1, 12);
+}
+html::-webkit-scrollbar-thumb {
+  background: #727074;
+}
+
+section {
+  min-height: 80vh;
+  padding: 2rem 5%;
+  background-color: rgba(33, 31, 31, 0.916);
+  background-image : url("../images/wallpaper.jpg");
+  background-position: 100%;
+}
+.heading {
+  font-size: 3.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  text-align: center;
+  margin: 0px;
+  font-family: 'Questrial' !important;
+  
+}
+.heading span {
+  color: rgb(30, 215, 225);
+}
+.education {
+  background:rgb(13, 13, 13);
+
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image : url("../images/wallpaper3.jpg");
+  background-size: 100%;
+}
+
+.education  .box {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  border-radius: 0.1rem;
+  box-shadow: 0.2rem 0.3rem 1rem rgba(222, 218, 218, 0.252);
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
+  transition: 0.3s;
+  background-image : url("../images/wallpaper.jpg");
+  height: 18rem;
+}
+.education  .box:hover {
+  transform: scale(1.03);
+  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+.education  .box .image {
+  flex: 1 1 20rem;
+  width: 100%;
+}
+.education  .box img {
+  object-fit: fill;
+  position: relative;
+  margin-top: 3%;
+  width: 60%;
+  height: 90%;
+}
+.education  .box .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  flex-wrap: wrap;
+  flex: 1 1 70rem;
+  margin: 0;
+  padding: 0;
+}
+.education  .box .content h3 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: 'Questrial' !important;
+  text-align: left;
+  margin-left: 0.1rem;
+}
+
+.education  .box .content p {
+  font-size: 1.7rem;
+  margin-left: 0.1rem;
+  font-family: 'Questrial' !important;
+  text-align: left;
+  color: #ffffff;
+}
+
+
+.education h4 {
+  font-size: 2rem;
+  color: #37b188;
+  text-align: left;
+  margin: 0.1rem;
+  font-family: 'Questrial' !important;
+  font-weight: 300;
+}
+
+
+
+/*-------------------------Brands--------------------*/
+
+.brands {
+  text-align: center;
+  line-height: 2;
+  padding: 20px 0 40px 0;
+}
+
+.brands p {
+  font-size: 22px;
+  font-family: sans-serif;
+  text-align: left;
+  padding-left: 50px;
+  margin-top: 40px;
+}
+
+.brands img {
+  margin-top: 40px;
+  height: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.smalllogo{
+ height: 85px;
+
+}
+
+@media screen and (max-width: 600px) {
+  .brands img {
+    width: 30px;
+  }
+}
+
+/*--------------------------Box Model ------------------*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  font-family: sans-serif;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 60%;
+  height: fit-content;
+  border-radius: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 70%;
+  margin-top:-65px;
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*------------------- Parallax.jsx -----------------------------*/
+
+.parallax-container {
+  background-image: url("../images/Intro.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*-----------------------Experiance.jsx ----------------------*/
+
+
+/* experience section starts */
+.headingExp {
+  font-size: 3.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  text-align: center;
+  margin: 0px;
+  font-family: 'Questrial' !important;
+  margin-bottom: 3rem;
+  
+}
+.experience .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.experience .timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background: #fed55f;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 1;
+}
+.experience .container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/*circles on timeline*/
+.experience .container::after {
+  content: "\a";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: rgb(255, 255, 255);
+  border: 4px solid #c5668e;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 2
+
+}
+.experience .left {
+  left: -6.6%;
+}
+
+.experience .right {
+  left: 50%;
+}
+
+/* arrows pointing right */
+.experience .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 31px;
+  border: medium solid #26d6a7;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #26d6a7;
+}
+
+
+/* arrows pointing left  */
+.experience .right::before {
+  content: " ";
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #26d6a7;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #26d6a7 transparent transparent;
+}
+
+.experience .right::after {
+  left: -16px;
+}
+.experience .contentR{
+  background-image: linear-gradient(#08e3f3, #05E8BA);
+  position: relative;
+  border-radius: 6px
+
+}
+.experience .contentL {
+  background-image: linear-gradient(#05E8BA, #08e3f3);
+  position: relative;
+  border-radius: 6px;
+}
+
+.experience .contentR  .tag , .contentL .tag {
+  font-size: 1.3rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+.experience .contentR  .desc, .contentL .desc {
+  margin-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+.experience .contentR .desc h3 , .contentL .desc h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.experience .contentR .desc p , .contentL .desc p {
+  font-size: 1.5rem;
+}
+
+
+/*-----------------------Footer---------------------*/
+
+footer {
+  padding: 0;
+  margin: 0;
+  padding: 50px;
+  background-color: #161517;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.footer-content {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-col-1 {
+  padding: 0;
+  margin: 0;
+  width: 40%;
+}
+.footer-col-2 {
+  padding: 0;
+  margin: 0;
+  width: 40%;
+  line-height: 1.5;
+}
+
+.footer-col-1 ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin: 10px 0 10px 0;
+  font-size: 18px;
+}
+
+.footer-security {
+  padding: 0;
+  margin: 0;
+  margin-top: 60px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-security img {
+  padding: 0;
+  margin: 0;
+  width: 80%;
+}
+
+
+.footer-col-2 ul li {
+  padding: 0;
+  margin: 0;
+  float: left;
+  margin: 5px;
+  list-style: none;
+  border-right: 1px solid rgb(248, 248, 248);
+  padding-right: 15px;
+}
+
+.footer-col-2 ul li a{
+  padding: 0;
+  margin: 0;
+  color:rgb(248, 248, 248);
+  text-decoration: none;
+}
+.clear {
+  clear: left;
+}
+
+.footer-col-2 h4{
+  padding: 0;
+  margin: 0;
+  margin: 20px 0 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-col-1 {
+    width: 80%;
+  }
+  .footer-col-2 {
+    width: 80%;
+  }
+}
+
+
+#scroll-top {
+  position: fixed;
+  top: -140%;
+  right: 2rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  background: #ffae00;
+  color: rgb(13, 0, 44);
+  border-radius: 50%;
+  transition: 1s linear;
+  z-index: 1000;
+}
+
+
+#scroll-top.active {
+  top: calc(100% - 12rem);
+}
+
+
+/* Adjust the style for the container holding the icons */
+.social-media-container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  
+}
+
+/* Style for the social media icons */
+.social-media-icon-li , .social-media-icon-ins , .social-media-icon-wa  {
+  margin: 0 10px;
+  color: #555; /* Change the color as needed */
+  transition: color 0.3s ease;
+  size: 20px
+}
+
+/* Add hover effect to the icons */
+.social-media-icon-li:hover {
+  color: #00a6ff;
+  background-clip: text;
+  border-radius: 20%;
+  transform: scale(1.5);/* /* Change to the desired hover color */
+}
+
+.social-media-icon-ins:hover {
+  color: #bf00ff; 
+  background-clip: text;
+  border-radius: 20%;
+  transform: scale(1.5);
+}
+
+.social-media-icon-wa:hover {
+  color: #00ff2f; 
+  background-clip: text;
+  border-radius: 20%;
+  transform: scale(1.5);/* Change to the desired hover color */
+}
+
+
+/* If you want to adjust the size of the icons */
+:root {
+  --background-color: #333;
+  --text-color: #fff;
+  --box-shadow: none;
+}
+
+.carousel{
+padding-top: 2vh;
+padding-bottom: 5vh;
+padding-right: 2vh;
+background-image : url("../images/wallpaper4.jpg");
+background-size: 100%;
+}
+
+/* Style for the project container */
+.project-container {
+  margin-top: 2vh;
+  padding: 20px;
+  align-items: center;
+  height: 80vh;
+  width: 95%;
+  background-color: transparent;
+}
+
+/* Style for the project title */
+.project-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+/* Style for the project description */
+.project-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Style for the technologies list */
+.project-technologies {
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Style for the project images */
+.project-image {
+  max-width: 50%;
+  margin-bottom: 10px;
+  height: 60vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.rec-carousel-item:focus {
+  outline: none;
+  box-shadow: inset 0 0 1px 0px rgb(255, 255, 255);
+}
