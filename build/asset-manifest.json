@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.44fa2a61.css",
+    "main.js": "/static/js/main.70d322bf.js",
+    "static/js/787.458f4226.chunk.js": "/static/js/787.458f4226.chunk.js",
+    "static/media/wallpaper3.jpg": "/static/media/wallpaper3.0d6c387198112f922782.jpg",
+    "static/media/wallpaper.jpg": "/static/media/wallpaper.df05ef49c7389425dc6e.jpg",
+    "static/media/wallpaper4.jpg": "/static/media/wallpaper4.833862aaf3a3e36f4298.jpg",
+    "static/media/home_logo.png": "/static/media/home_logo.4172b4188018d844d5b1.png",
+    "static/media/port.png": "/static/media/port.bf6c5aedad310e679e2e.png",
+    "static/media/git.png": "/static/media/git.284d46f4458bbdb512d9.png",
+    "static/media/mysql.png": "/static/media/mysql.c71a397226e4af3e7fbc.png",
+    "static/media/port2.png": "/static/media/port2.d2f7e9408edf34fbf1a2.png",
+    "static/media/mca.png": "/static/media/mca.35925280e8327d39f8bc.png",
+    "static/media/Prakhar_Resume.pdf": "/static/media/Prakhar_Resume.cd1252afea41d552e768.pdf",
+    "static/media/Intro.jpg": "/static/media/Intro.afd5c6108fed93915a66.jpg",
+    "static/media/info.png": "/static/media/info.3af8f2dafc78a0da96a2.png",
+    "static/media/video-bg.png": "/static/media/video-bg.ba7cf221a49b38238af3.png",
+    "static/media/reactlogo.png": "/static/media/reactlogo.cbff67c6d24adc89de6f.png",
+    "static/media/CentOS1.png": "/static/media/CentOS1.b17856513d853e029e95.png",
+    "static/media/git1.png": "/static/media/git1.faccfae3c97596fcb27e.png",
+    "static/media/docker.png": "/static/media/docker.fffe685f3cb8a5068238.png",
+    "static/media/python1.png": "/static/media/python1.451ed6bb296bae9a73b3.png",
+    "static/media/gitlab.png": "/static/media/gitlab.e158db8701080df53d79.png",
+    "static/media/jslogo.png": "/static/media/jslogo.820c84cfe51d6659df8a.png",
+    "static/media/react1.png": "/static/media/react1.20adfb35ae6a6e5817bf.png",
+    "static/media/Python.png": "/static/media/Python.461c1effab163e472fc7.png",
+    "static/media/CentOS.png": "/static/media/CentOS.9fb96b405e1b41782f3e.png",
+    "static/media/fastapi.png": "/static/media/fastapi.934e565ab381509f7d97.png",
+    "static/media/tcsc.jpg": "/static/media/tcsc.4df5ddd06eb42a9cefed.jpg",
+    "index.html": "/index.html",
+    "main.44fa2a61.css.map": "/static/css/main.44fa2a61.css.map",
+    "main.70d322bf.js.map": "/static/js/main.70d322bf.js.map",
+    "787.458f4226.chunk.js.map": "/static/js/787.458f4226.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44fa2a61.css",
+    "static/js/main.70d322bf.js"
+  ]
+}
